@@ -1,5 +1,6 @@
-var time=0
 
+let a = 0.0;
+let s = 0.3;
 function setup(){
     //GabbyKraemer
     createCanvas (1000,1000);
@@ -57,8 +58,25 @@ line(425,0,425,500);
 line(0,20,1000,20);
 line(0,980,1000,980);
 
+  rectMode(1000,500);
 }
 
   function draw() {
+    a = a + 0.03;
+   s = cos(a) * 5;
+   strokeWeight(.5)
+   translate(1000 / 2, 1000 / 2);
+     scale(s);
+     stroke(255, 50, 50);
+     strokeWeight(4);
+     line(0,1400,500,900);
+     line(0,1300,500,800);
+     line(0,1200,500,700);
+     line(0,1100,500,600);
+     line(0,1000,500,500);
+     line(0,900,400,500);
+     line(0,800,300,500);
+     line(0,700,200,500);
+     line(0,600,100,500);
 
 }
